@@ -12,9 +12,6 @@ import android.widget.ImageView;
 import com.ceylonlabs.imageviewpopup.ImagePopup;
 
 public class MainActivity extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         //imagePopup.setHideCloseIcon(true);
         imagePopup.setImageOnClickClose(true);
 
-
-
         final ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     closeBtn.setImageDrawable(getDrawable(R.drawable.x));
-                    imagePopup.setCloseIcon(closeBtn);
+                    //imagePopup.setCloseIcon(closeBtn);
                 }
 
                 //imagePopup.setBackgroundColor(R.color.colorAccent);
